@@ -1,48 +1,71 @@
-# Array Manipulation Tasks
+# 🎓 Automated Student Assessment System
 
-This project showcases a variety of array manipulation tasks implemented in JavaScript. The code includes functions to print developers, add data, remove admins, concatenate arrays, calculate average age, check age above 25, find unique professions, sort by age, update John's profession, and get the count of professions. Below are explanations for each function:
+A modular, **Object-Oriented** command-line application designed to streamline classroom assessments and track student performance in real-time. This project serves as a practical demonstration of **Python logic-building**, **Database Management**, and **Clean Code** principles.
 
-## Code Explanations
+---
 
-### 1. Print Developers
-- **Approach 1**: Using a `for of` loop to iterate through the `data` array and print developers.
-- **Approach 2**: Utilizing a simple `for` loop to achieve the same result.
+## 🚀 Overview
+This system was engineered to solve a common challenge in technical training: the need for an efficient, local, and automated way to evaluate student progress. It features a dual-mode interface:
+1. **Trainer Mode**: For creating and managing quiz questions stored in a persistent database.
+2. **Student Mode**: For taking timed assessments with instant logic-based feedback.
 
-### 2. Add Data
-- Prompting the user for input to create a new data object with name, age, and profession.
-- Adding the new object to the `data` array and logging the updated array.
+---
 
-### 3. Remove Admins
-- Filtering the `data` array to create a new array excluding objects with the 'admin' profession.
-- Logging the filtered array.
+## 🛠️ Technical Stack & Engineering Principles
+This project showcases 2+ years of professional engineering and instructional experience:
 
-### 4. Concatenate Array
-- Creating a new object and concatenating it to the `data` array.
-- Logging the concatenated array.
+* **Language**: Python 3.x.
+* **Architecture**: **Object-Oriented Programming (OOP)**. Utilizes classes and encapsulation to ensure modularity and scalability.
+* **Database**: **SQLite**. Implements standard SQL CRUD operations for data persistence and result tracking.
+* **Error Handling**: Robust input validation and **Exception Handling** to prevent runtime failures during student interactions.
+* **Version Control**: Managed via Git/GitHub following professional workflow standards.
 
-### 5. Average Age
-- Calculating and logging the average age of objects in the `data` array.
+---
 
-### 6. Age Check Above 25
-- Checking and logging objects with age above 25 from the `data` array.
+## 🏗️ Folder Architecture
+The project follows a **Modular Design** pattern, separating concerns between data, logic, and presentation—a core concept I teach in my Software Engineering labs:
 
-### 7. Unique Professions
-- Using a `Set` to get unique professions and logging them as an array.
+```text
+StudentAssessmentSystem/
+├── models.py      # OOP definitions (Student, Question, Quiz) 
+├── database.py    # SQL logic and DBMS connectivity 
+├── app.py         # Main controller and CLI logic 
+└── README.md      # Project documentation 
+```
 
-### 8. Sort by Age
-- Sorting the `data` array based on age in ascending order.
+---
 
-### 9. Update John's Profession
-- Finding John's entry in the `data` array and updating his profession to "manager".
-- Logging the updated array.
+## 💎 Advanced Implementation Details
+This project incorporates several high-level concepts to ensure production-like stability and academic clarity:
 
-### 10. Profession Count
-- Counting and logging the total number of objects in the `data` array.
+* **Schema Normalization**: Designed a relational database schema that separates questions from student results, ensuring data integrity and efficient querying.
+* **Input Sanitization**: Implemented custom validation loops to handle edge cases in user input, preventing the application from crashing during runtime.
+* **Modular Reusability**: Classes in `models.py` are designed to be independent, allowing them to be imported into other educational tools without modification.
 
-## Running the Project
+---
 
-1. Open the HTML file (`index.html`) in a web browser.
-2. Click on the buttons to trigger various array manipulation tasks.
-3. Observe the results in the console.
+## 💡 Key Features for Recruiters & Hiring Managers
+* **Scalable Data Structure**: Uses list comprehensions and optimized loops for fetching and displaying quiz content.
+* **Relational Database Design**: Includes a schema for tracking multiple students and their historical scores, demonstrating **DBMS** proficiency.
+* **Instructor-Led Design**: Built with the pedagogical intent to demonstrate **Time Complexity** and **logic flow** to junior developers.
 
-Feel free to explore and modify the JavaScript functions in the script file (`script.js`) for further customization of the array manipulation tasks.
+---
+
+## 🔧 Installation & Usage
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Mayank-Garg7/StudentAssessmentSystem.git
+   ```
+2. **Set up a Virtual Environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+3. **Run the Application**:
+   ```bash
+   python app.py
+   ```
+
+---
+
+[View Future Roadmap](./FUTURE_IMPLEMENTATION.md)
