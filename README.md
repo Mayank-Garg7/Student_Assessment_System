@@ -68,5 +68,4 @@ This project incorporates several high-level concepts to ensure production-like 
 
 ---
 
-[View Future Roadmap](./FUTURE_IMPLEMENTATION.md)
-[View Security Features](./SECURITY.md)
+[View Future Roadmap](./FUTURE_IMPLEMENTATION.md) | [View Security Features](./SECURITY.md)
